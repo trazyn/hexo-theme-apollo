@@ -1,0 +1,72 @@
+
+$light: #7f8c8d;
+$green: #4fc08d;
+$logo-font: 'Dosis', 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
+
+html, body {
+    height: 100%;
+}
+
+#nav, #translations {
+
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    li {
+        display: inline-block;
+        position: relative;
+        line-height: 40px;
+        &:last-child .nav-link { margin-right: 0; }
+    }
+}
+
+.nav-link {
+
+    color: $light;
+    padding-bottom: 3px;
+    margin: 0 1.5em;
+    &:first-child { margin-left: 0; }
+    &:hover, &.current { border-bottom: 3px solid $green; }
+}
+
+#logo {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+}
+
+#logo-wrap { margin: 3.5em 0 4em; }
+
+#hero {
+    text-align: center;
+    height: 100%;
+    min-height: 720px;
+    position: relative;
+    .inner {
+        height: 640px;
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        margin-top: -340px;
+        left: 0;
+    }
+    h1 {
+        font-family: $logo-font;
+        font-weight: 300;
+        font-size: 4em;
+        margin: 0;
+    }
+    .warning { color: $light; }
+    .desc {
+        max-width: 800px;
+        padding: 0 20px;
+        text-align: center;
+        margin: 1.5em auto;
+        color: $light;
+    }
+    a.button {
+        width: 280px;
+        margin: .5em;
+    }
+}
